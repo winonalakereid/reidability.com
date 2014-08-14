@@ -92,11 +92,6 @@ function addTreeNode(element, classes, id, parent) {
                if ($(this)[0].className.replace(/[A-Za-z$-]/g, "")[0] == parent) {
                    
                    foundParent = true;
-                   if ($(this).treegrid("isLast")) {
-                       console.log("why hbello");
-                       $(this).after("<tr class= 'treegrid-" + treeGridCounter + " treegrid-parent-" + parent + "'>" + elementTD + classesTD + idTD + "</tr>");
-                       foundParent = false;
-                   }
                    console.log(foundParent);
                }
            }
